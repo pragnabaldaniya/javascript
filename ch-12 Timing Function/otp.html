@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp</title>
+    <!-- remix icon css-->
+    <link href="remix/remixicon.css" type="text/css" rel="stylesheet">
+</head>
+<style>
+    body {
+
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+        font-family: monospace;
+    }
+
+    /* Wrapper must be relative */
+    .otp-chat {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* IMAGE — big & green */
+    .otp-chat img {
+        width: 250px;
+        /* big image */
+        display: block;
+
+        filter: brightness(0) saturate(100%) invert(32%) sepia(95%) saturate(500%) hue-rotate(95deg);
+    }
+
+    /* TIMER — IMAGE KE ANDAR RIGHT BOTTOM */
+    .btn {
+        position: absolute;
+        bottom: 78px;
+        /* 👈 image ke andar */
+        right: 21px;
+        /* 👈 image ke andar */
+
+        font-size: 17px;
+        font-weight: bold;
+        color: grey;
+
+    }
+</style>
+
+<body>
+    <div class="otp-chat">
+        <h4></h4>
+        <img src="images/message.png">
+        <div class="btn">
+            01:59
+        </div>
+
+    </div>
+
+
+    <script src="otp.js"></script>
+</body>
+
+</html>

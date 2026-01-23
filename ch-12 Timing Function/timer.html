@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Function</title>
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #8b7a41, #aeb0b1);
+            font-family: Arial;
+        }
+
+        /* WRAPPER */
+        .watch-wrapper {
+            position: relative;
+            width: 260px;
+        }
+
+        /* WATCH – LIQUID GLASS */
+        .watch {
+            height: 260px;
+            width: 260px;
+            border-radius: 50%;
+
+            /* OUTER BORDER */
+            border: 3px solid rgba(255, 255, 255, 0.7);
+
+            /* INNER BORDER (double border feel) */
+            outline: 3px solid rgba(0, 0, 0, 0.25);
+            outline-offset: -10px;
+
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(22px) saturate(160%);
+            -webkit-backdrop-filter: blur(22px) saturate(160%);
+            border: 2px solid rgba(255, 255, 255, 0.35);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 50px;
+            font-weight: bold;
+
+            box-shadow:
+                inset 0 0 25px rgba(255, 255, 255, 0.6),
+                0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        /* BOTTOM BUTTONS – ONE LINE */
+        .top-buttons {
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 16px;
+        }
+
+        /* LIQUID GLASS BUTTON */
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 36px;
+            border-radius: 20px;
+
+
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+
+            box-shadow:
+                inset 0 0 8px rgba(255, 255, 255, 0.6),
+                0 6px 14px rgba(0, 0, 0, 0.25);
+
+            transition: all 0.15s ease;
+        }
+
+        /* PRESS EFFECT – REAL BUTTON FEEL */
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow:
+                inset 0 0 12px rgba(255, 255, 255, 0.8),
+                0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="watch-wrapper">
+
+        <!-- TOP MECHANICAL BUTTONS -->
+        <div class="top-buttons">
+            <div class="btn" id="start" title="Start">Start</div>
+            <div class="btn" id="stop" title="Stop">Stop</div>
+            <div class="btn" id="reset" title="Reset">Reset</div>
+        </div>
+
+        <!-- WATCH -->
+        <div class="watch" id="display">00:00</div>
+    </div>
+
+
+
+
+    <script src="timer.js"></script>
+</body>
+
+</html>
