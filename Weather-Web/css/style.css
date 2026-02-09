@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+}
+
+body {
+    background-image: url(../images/bg4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Inter, sans-serif;
+    color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 80px 1fr 300px;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar,
+.main,
+.forecast {
+    /* Light glass background */
+    background: rgba(255, 255, 255, 0.06);
+
+    /* Soft blur */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* Soft border */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    /* Existing radius */
+    border-radius: 16px;
+
+    /* Very light shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Sidebar */
+.sidebar {
+    border-radius: 16px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.sidebar nav a {
+    display: block;
+    margin: 25px 0;
+    opacity: .7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Main */
+.main {
+
+    border-radius: 16px;
+    padding: 25px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.current {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.current h2 {
+    font-size: 48px;
+}
+
+.hourly {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hourly div,
+.air div {
+
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.hourly img {
+    width: 50px;
+    height: 40px;
+}
+
+.air {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.air-icon i {
+    font-size: 25px;
+}
+
+/* Forecast */
+.forecast {
+    border-radius: 16px;
+    padding: 20px;
+
+}
+
+.forecast li {
+    list-style: none;
+    margin: 15px 0;
+    opacity: .85;
+}
+
+.forecast-content img {
+    width: 60px;
+    height: auto;
+}
+
+.forecast-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

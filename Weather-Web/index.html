@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- language meta  -->
+    <meta charset="UTF-8" />
+    <!-- viewport-width meta  -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- remix icon css-->
+    <link href="remix/remixicon.css" type="text/css" rel="stylesheet">
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- main css  -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo"><img src="images/weather-icon.png" alt="" class="img-fluid"></div>
+            <nav>
+                <a class="active"><i class="ri-rainy-line fs-5"></i><span>Weather</span></a>
+                <a><i class="ri-building-4-fill fs-5"></i><span>Cities</span></a>
+                <a><i class="ri-map-2-line fs-5"></i><span>Map</span></a>
+                <a><i class="ri-settings-3-line fs-5"></i><span>Settings</span></a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <!-- Search -->
+            <input type="text" id="searchInput" placeholder="Search for cityes">
+
+            <!-- Current Weather -->
+            <div class="current">
+                <div>
+                    <h1 id="city-name">Surat</h1>
+                    <p id="rainChance">Chance of rain: 0%</p>
+                    <h2 id="temp">31°</h2>
+                </div>
+                <div id="weatheIcon"><img src="images/sun.png" alt="" class="img-fluid" width="280px" /></div>
+            </div>
+
+            <!-- Hourly Forecast -->
+            <div class="hourly">
+                <div>6 AM<br><img src="images/singal-cloud.png" alt="" class="img-fluid">25°</div>
+                <div>9 AM<br><img src="images/cloud.png" alt="" class="img-fluid">28°</div>
+                <div>12 PM<br><img src="images/sun.png" alt="" class="img-fluid">33°</div>
+                <div>3 PM<br><img src="images/sun.png" alt="" class="img-fluid">34°</div>
+                <div>6 PM<br><img src="images/sun.png" alt="" class="img-fluid">32°</div>
+                <div>9 PM<br><img src="images/cloud.png" alt="" class="img-fluid">30°</div>
+            </div>
+
+            <!-- Air Conditions -->
+            <div class="air">
+                <div class="air-icon me-4"><i class="ri-temp-cold-line"></i>Real Feel<br><strong>30°</strong></div>
+                <div class="air-icon me-4"><i class="ri-windy-line"></i>Wind<br><strong>0.2 km/h</strong></div>
+                <div class="air-icon me-4"><i class="ri-drop-fill"></i>Chance of rain<br><strong>0%</strong></div>
+                <div class="air-icon me-4"><i class="ri-settings-2-fill"></i>UV Index<br><strong>3</strong></div>
+            </div>
+
+        </main>
+
+        <!-- Right Forecast -->
+        <aside class="forecast">
+            <h3>7-Day Forecast</h3>
+            <ul>
+                <li class="forecast-content">Mon
+                    <img src="images/sun.png" alt="" class="img-fluid"><span class="me-4">Sunny</span>36 / 22
+                </li>
+                <li class="forecast-content">Tue
+                    <img src="images/sun.png" alt="" class="img-fluid"><span class="me-4">Sunny</span>37 / 21
+                </li>
+                <li class="forecast-content">Wed
+                    <img src="images/sun.png" alt="" class="img-fluid"><span class="me-4">Sunny</span>37 / 21
+                </li>
+                <li class="forecast-content">Thu
+                    <img src="images/singal-cloud.png" alt="" class="img-fluid"><span class="me-4">cloudly</span>36 / 22
+                </li>
+                <li class="forecast-content">Fri
+                    <img src="images/singal-cloud.png" alt="" class="img-fluid"><span class="me-4">Cloudly</span>37 /21
+                </li>
+                <li class="forecast-content">Sat
+                    <img src="images/rain-cloud.png" alt="" class="img-fluid"><span class="me-4">Rainy</span>37 / 21
+                </li>
+                <li class="forecast-content">Sun
+                    <img src="images/storm.png" alt="" class="img-fluid"><span class="me-4">Storm</span>36 / 22
+                </li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
