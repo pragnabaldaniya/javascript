@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+/* header  */
+
+header {
+    background-color: #83bfe7;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.header-search {
+    min-width: 280px;
+}
+
+form{
+    box-shadow:gray;
+}
+
+.d-grid .btn{
+    background-color: #83bfe7;
+}
+/* viwe product */
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-text {
+    height: 60px;
+    overflow: hidden;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-body button {
+    margin-top: auto;
+}
+
+#tbody button{
+    background-color: gray;
+}
